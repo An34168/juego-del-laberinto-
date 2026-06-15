@@ -33,14 +33,24 @@
       flex-direction: column;
       z-index: 999;
     }
+ .cardBig {
+  width: 420px;
+  height: 600px;
+  perspective: 1000px;
+  text-align: center;
+  color: white;
 
-    .cardBig {
-      width: 270px;
-      height: 390px;
-      perspective: 1000px;
-      text-align: center;
-      color: white;
-    }
+  opacity: 0;
+  transform: scale(0.5);
+  animation: pop 0.4s forwards;
+}
+
+@keyframes pop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
     .cardBig .inner {
       width: 100%;
@@ -110,7 +120,7 @@
         </div>
       </div>
 
-      <h2>🎉 Has desbloqueado la carta</h2>
+      <h2> Has desbloqueado la carta Arturo forma basica </h2>
       <p>Haz click en cualquier parte para salir</p>
     </div>
   </div>
